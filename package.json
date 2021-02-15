@@ -1,0 +1,41 @@
+{
+  "name": "@nielsendigital/events",
+  "version": "1.0.0",
+  "description": "a NATS based TypeScript Event Library with NATS wrapper",
+  "prettier": "@nielsendigital/prettier-config",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "pub": "npm version patch && npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjn/events.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "events",
+    "NATS"
+  ],
+  "author": "Will Nielsen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wjn/events/issues"
+  },
+  "homepage": "https://github.com/wjn/events#readme",
+  "devDependencies": {
+    "@nielsendigital/prettier-config": "^1.0.0",
+    "del-cli": "^3.0.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@nielsendigital/errors": "^1.0.2",
+    "@nielsendigital/logit": "^1.0.2",
+    "node-nats-streaming": "^0.3.2"
+  }
+}
