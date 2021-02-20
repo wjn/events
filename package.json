@@ -1,6 +1,6 @@
 {
     "name": "@nielsendigital/events-url-shortener",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "a NATS based TypeScript Event Library with NATS wrapper",
     "prettier": "@nielsendigital/prettier-config",
     "main": "./build/index.js",
