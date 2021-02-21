@@ -3,7 +3,7 @@ export interface UrlData {
     userId: string;
     title: string;
     url: URL;
-    shortUrl: URL;
+    shortUrlHash: string;
     dateCreated?: Date;
     dateLastModified?: Date;
     version: number;
